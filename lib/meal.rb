@@ -11,7 +11,6 @@ class Meal
     @total = total
     @tip = tip
     @@all << self
-    binding.pry
   end
   
   def self.all

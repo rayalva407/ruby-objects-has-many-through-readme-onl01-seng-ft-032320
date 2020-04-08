@@ -1,3 +1,4 @@
+require 'pry'
 class Meal
   
   attr_accessor :waiter, :customer, :total, :tip
@@ -10,6 +11,11 @@ class Meal
     @total = total
     @tip = tip
     @@all << self
+    binding.pry
+  end
+  
+  def self.all
+    @@all
   end
   
 end
